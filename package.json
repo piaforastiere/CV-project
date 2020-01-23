@@ -1,0 +1,28 @@
+{
+  "name": "CV-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "contentful": "^7.13.1",
+    "next": "^9.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "contentful-cli": "^1.2.10",
+    "contentful-migration": "^1.0.9",
+    "dotenv": "^8.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}

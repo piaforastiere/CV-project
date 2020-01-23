@@ -1,0 +1,2 @@
+# As a query parameter:
+curl -v https://cdn.contentful.com/spaces/cfexampleapi/entries?access_token=b4c0n73n7fu1
