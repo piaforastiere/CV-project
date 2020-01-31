@@ -1,52 +1,41 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
+import Job from './Job'
 
-const Jobs = ( p ) => {
 
-  const {slug, jobTitle, key, from, to, description, company} = p.fields
+const client = require('contentful').createClient({
+  space: process.env.contentfulSpaceId,
+  accessToken: process.env.contenfulAccessToken
+})
+
+const Jobs = ( ) => {
+
+  async function fetchEntries() {
+    const entries = await client.getEntries()
+    if (entries.items) return entries.items
+    console.log(`Error getting Entries for ${contentType.name}.`)
+  }
+
+  const [jobs, setJobs] = useState([])
+
+  useEffect(() => {
+    async function getJobs() {
+      const allJobs = await fetchEntries()
+      setJobs([...allJobs])
+    }
+    getJobs()
+
+
+  }, [])
+
 
   return (
     <div className="container">
-      <div className="text">
-        <h2>{jobTitle}</h2>
-        <h4>{company}</h4>
-        <p className="date">{from} - {to}</p>
-        <p>{description}</p>
-      </div>
-      <style jsx>{`
-        .container {
-          cursor: pointer;
-          height: 453px;
-          margin-bottom: 48px;
-          background: red;
-        }
-        a {
-          border-bottom: none;
-        }
-        a:hover {
-          border-bottom: none;
-        }
-        .text {
-          margin-top: -160px;
-          padding: 24px;
-          position: absolute;
-        }
-        h2 {
-          color: white;
-          font-size: 24px;
-          margin-bottom: 0;
-        }
-        h4 {
-          color: rgba(255, 255, 255, 0.8);
-          font-size: 16px;
-          font-weight: 500;
-          margin-top: 8px;
-        }
-        p {
-          color: rgba(255, 255, 255, 0.8);
-          font-size: 14px;
-          margin-top: 8px;
-        }
-      `}</style>
+    <h2 className="title">EMPLOYMENT HISTORY</h2>
+    {jobs.length > 0
+      ? jobs.sort().map((job, index) => (
+          <Job {...job} key={index}/>
+        ))
+      : null}
     </div>
   )
 }

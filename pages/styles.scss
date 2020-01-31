@@ -1,0 +1,364 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+  height: 100%;
+}
+.nav-item{
+  margin-right: 30px;
+  color: #efefef;
+  a{
+    color: inherit;
+  }
+}
+.container{
+  width: 90%;
+  margin: auto;
+  position: relative;
+  @media screen and (max-width: 1024px){
+    width: 100%;
+  }
+  @media screen and (min-width: 576px){
+    max-width:100%;
+    padding: 0;
+  }
+}
+.nameTitle{
+  width: 80%;
+  padding: 50px 40px;
+  border: solid 1.5px #000;
+  text-align: center;
+  margin-left: -10%;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  background: #fff;
+  z-index: 10;
+  @media screen and (max-width: 600px){
+    padding: 40px 30px;
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+  }
+  h2{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    @media screen and (max-width: 600px){
+      font-size: 22px;
+    }
+  }
+}
+.mainContent{
+  width: 70%;
+  float: right;
+  padding-left: 30px;
+  @media screen and (max-width: 768px){
+    width: 60%;
+
+  }
+  @media screen and (max-width: 600px){
+    width: 100%;
+    padding: 0;
+  }
+}
+.sideBar{
+  color: #fff;
+  width: 30%;
+  float: left;
+  background: rgba(47, 56, 72, 0.7);
+  padding: 200px 40px 20px 40px;
+  .title{
+    color: inherit;
+    &:after{
+      background: #fff;
+    }
+  }
+  @media screen and (max-width: 768px){
+    width: 40%
+  }
+  @media screen and (max-width: 600px){
+    width: 100%;
+    padding: 30px 20px 20px 20px;
+  }
+  .row{
+    margin: 0;
+    margin-bottom: 20px;
+
+  }
+  .info, .skills, .hobbies, .languages{
+    margin-bottom: 50px;
+  }
+  .info{
+    .subTitle{
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 16px;
+      margin-bottom: 5px;
+      width: 100%;
+      @media screen and (max-width: 600px){
+        font-size: 10px;
+      }
+    }
+    p{
+      font-size: 12px;
+      line-height: 16px;
+      @media screen and (max-width: 600px){
+        font-size: 10px;
+        line-height: 14px;
+      }
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+  .languages, .skills, .hobbies{
+    ul{
+      display: grid;
+      list-style: none;
+    }
+    .subTitle{
+      font-size: 15px;
+      font-weight: 400;
+      text-transform: capitalize;
+      line-height: 17px;
+      margin-bottom: 5px;
+      width: 100%;
+      @media screen and (max-width: 600px){
+        font-size: 13px;
+        margin-bottom: 0;
+      }
+    }
+    p{
+
+      span{
+        margin-right: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.title{
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  line-height: 16px;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+  text-align: left;
+  @media screen and (max-width: 600px){
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 80%;
+    height: 2px;
+    background: #000;
+  }
+}
+.description{
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+.text{
+  margin-bottom: 50px;
+  padding-top: 20px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 600px){
+    margin-bottom: 20px;
+    padding-top: 0;
+  }
+  .jobTitle{
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    @media screen and (max-width: 600px){
+      font-size: 13px;
+    }
+  }
+  .jobDescription, .date{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 25px;
+    margin-bottom: 5px;
+    margin-bottom: 10px;
+    @media screen and (max-width: 600px){
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+  .date{
+    font-weight: 500;
+  }
+}
+
+.form-user {
+    background-color: #2f3848;
+    height: 100vh;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 600px){
+      min-height: 100vh;
+    }
+    .status{
+      color: red;
+      text-align: right;
+      margin-bottom: 10px;
+
+    }
+    h1{
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+}
+
+.container-form {
+    padding: 5rem 3rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    @media screen and (max-width: 600px){
+      padding: 3rem 2rem;
+    }
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+.form-field:last-of-type {
+  margin: 0;
+}
+.form-field label {
+  flex: 0 0 100px;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 30px;
+  @media screen and (max-width: 600px){
+    margin-right: 10px;
+  }
+}
+.form-field input{
+  border: 1px solid #e1e1e1;
+  padding: 3px;
+  flex: 1;
+  float: right;
+  @media screen and (max-width: 600px){
+    width: 150px;
+  }
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding: 1.5rem;
+  font-size: 1.4;
+  font-weight: 400;
+  border-radius: .5rem;
+  border: none;
+  transition: background-color .3s ease;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn-primario {
+  background-color: #2f3848;
+  color: #ffffff;
+  width: 100%;
+  a{
+    color: #ffffff;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+.btn-primario:hover {
+  background: #1a202d;
+  color: #ffffff;
+}
+.btn-secundario {
+  background-color: #edf2f6;
+  width: 100%;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn-submit:hover {
+  background-color: #2f3848;
+}
+.btn-blank {
+  margin: 0;
+  padding: 0;
+  display: block;
+  background-color: transparent;
+}
+.flex-large{
+  margin-top: 20px;
+}
+table{
+  thead{
+    tr{
+      border-bottom: 1px solid black;
+      th{
+        padding-bottom: 5px;
+      }
+    }
+  }
+  td{
+    vertical-align: middle;
+    .btn-secundario{
+      width: 100px;
+      padding: 10px 28px;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    :first-child{
+      padding-right: 40px;
+    }
+  }
+}
