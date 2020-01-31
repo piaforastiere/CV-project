@@ -86,6 +86,13 @@ body{
   float: left;
   background: rgba(47, 56, 72, 0.7);
   padding: 200px 40px 20px 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	@media screen and (max-width: 600px){
+		position: relative;
+	}
   .title{
     color: inherit;
     &:after{
@@ -216,6 +223,7 @@ body{
     line-height: 25px;
     margin-bottom: 5px;
     margin-bottom: 10px;
+		white-space: pre-line;
     @media screen and (max-width: 600px){
       font-size: 13px;
       line-height: 15px;

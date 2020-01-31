@@ -14,7 +14,7 @@ const EditPage = () => {
       company:'Publicist Sapient',
       from: 'Mar 2019',
       to:'Present',
-      jobDescription:"Working side by side in teams with Graphic Designers, XZ and Backend Developers. Requirement Analysis. Configuration, content migration, customization and creation of websites. Customization of templates and extensions for the implementation of thematic web sites, based on best practices for the design and development. Convert PSD, Sketch and (eplin mock-ups into responsive and pixel perfect sites. Re-factoring webpages with ReactJS, SCSS, JQuery, Javascript, HTML5, PHP, Laravel. Headless CMS Management.",
+      jobDescription:"Working side by side in teams with Graphic Designers, XZ and Backend Developers. \n Requirement Analysis. Configuration, content migration, customization and creation of websites. \n Customization of templates and extensions for the implementation of thematic web sites, based on best practices for the design and development.\n Convert PSD, Sketch and (eplin mock-ups into responsive and pixel perfect sites.\n Re-factoring webpages with ReactJS, SCSS, JQuery, Javascript, HTML5, PHP, Laravel. Headless CMS Management.",
     },
     {
       id:'1',
@@ -29,7 +29,7 @@ const EditPage = () => {
       company:'Sport Illustrated Play',
       from: 'Nov 2016',
       to:'Aug 2019',
-      jobDescription:"Leading the site and content creation for Sports Illustrated Play new sites. Conqguration, content migration and customization of pages. Customization of templates and extensions for the implementation of thematic web sites, based on best practices for the design and development.",
+      jobDescription:"Leading the site and content creation for Sports Illustrated Play new sites.  \nConqguration, content migration and customization of pages.  \nCustomization of templates and extensions for the implementation of thematic web sites, based on best practices for the design and development.",
     },
     {
       id:'3',
@@ -37,7 +37,7 @@ const EditPage = () => {
       company:'Diga ah!',
       from: 'Apr 2019',
       to:'Apr 2019',
-      jobDescription:'Discussing with clients on their re—uirements. Analyzed the job and provided a timeline for completion. Implementation of the new corporate image on the main site. Implementing HTML, CSS, JavaScript, and uploading content upon re—uest. Stripe implementation for payments. Collaborate with clients to make sure the website met their needs and satisfaction. Provide support to the client as needed after the website is launched.',
+      jobDescription:'Discussing with clients on their requirements.  \nAnalyzed the job and provided a timeline for completion.  \nImplementation of the new corporate image on the main site.  \nImplementing HTML, CSS, JavaScript, and uploading content upon re—uest.  \nStripe implementation for payments.  \nCollaborate with clients to make sure the website met their needs and satisfaction.  \nProvide support to the client as needed after the website is launched.',
     },
     {
       id:'4',
@@ -45,7 +45,7 @@ const EditPage = () => {
       company:'Mandala cAPITAL',
       from: 'Sep 2018',
       to:'Oct 2018',
-      jobDescription:'Discussing with clients on their re—uirements. Analyzed the job and provided a timeline for completion. Implementation of the new corporate image on the main site. Implementing HTML, CSS, JavaScript, and uploading content upon re—uest. Provide support to the client as needed after the website is launched.',
+      jobDescription:'Discussing with clients on their requirements.  \nAnalyzed the job and provided a timeline for completion. \n Implementation of the new corporate image on the main site.  \nImplementing HTML, CSS, JavaScript, and uploading content upon re—uest.  \nProvide support to the client as needed after the website is launched.',
     },
     {
       id:'5',
@@ -53,7 +53,7 @@ const EditPage = () => {
       company:'Nolii',
       from: 'Aug 2018',
       to:'Sep 2018',
-      jobDescription:'Set of cards, tote bags and postcards design for :The Design Junction:, London.',
+      jobDescription:'Set of cards, tote bags and postcards design for: The Design Junction:, London.',
     },
     {
       id:'6',
@@ -61,7 +61,7 @@ const EditPage = () => {
       company:'San Isidro Empresa de Pintura SRL',
       from: 'Apri 2018',
       to:'Jul 2018',
-      jobDescription:'Discussing with clients on their re—uirements. Analyzed the job and provided a timeline for completion. Designing the layout and architecture of the websites, as well as the graphic elements, and the website to be compliant with mobile devices. Implementation of the new corporate image on the main site. Implementing HTML, CSS, JavaScript, and uploading content upon re—uest. Collaborate with clients to make sure the website met their needs and satisfaction. Provide support to the client as needed after the website is launched. SEO implementation',
+      jobDescription:'Discussing with clients on their requirements.  \nAnalyzed the job and provided a timeline for completion.  \nDesigning the layout and architecture of the websites, as well as the graphic elements, and the website to be compliant with mobile devices.  \nImplementation of the new corporate image on the main site.  \nImplementing HTML, CSS, JavaScript, and uploading content upon re—uest. \n Collaborate with clients to make sure the website met their needs and satisfaction. \n Provide support to the client as needed after the website is launched. SEO implementation',
     },
   ]
 
